@@ -13,6 +13,8 @@
 		2551CBDF1EDDE79A00270D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2551CBDE1EDDE79A00270D12 /* Assets.xcassets */; };
 		2551CBE21EDDE79A00270D12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2551CBE01EDDE79A00270D12 /* LaunchScreen.storyboard */; };
 		2551CBED1EDDE79A00270D12 /* EarlGreyAttributedTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2551CBEC1EDDE79A00270D12 /* EarlGreyAttributedTextTests.swift */; };
+		2551CBFF1EDDF74D00270D12 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2551CBFC1EDDF6BE00270D12 /* EarlGrey.framework */; };
+		2551CC011EDDF79000270D12 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2551CC001EDDF79000270D12 /* EarlGrey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +24,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2551CBD31EDDE79A00270D12;
 			remoteInfo = EarlGreyAttributedText;
+		};
+		2551CBFB1EDDF6BE00270D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2551CBF71EDDF6BE00270D12 /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD1000E91C5B466F00B2DB0A;
+			remoteInfo = EarlGrey;
+		};
+		2551CBFD1EDDF72F00270D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2551CBF71EDDF6BE00270D12 /* EarlGrey.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1000E81C5B466F00B2DB0A;
+			remoteInfo = EarlGrey;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +52,8 @@
 		2551CBE81EDDE79A00270D12 /* EarlGreyAttributedTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarlGreyAttributedTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2551CBEC1EDDE79A00270D12 /* EarlGreyAttributedTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGreyAttributedTextTests.swift; sourceTree = "<group>"; };
 		2551CBEE1EDDE79A00270D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2551CBF71EDDF6BE00270D12 /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = "EarlGrey-1.9.3/EarlGrey.xcodeproj"; sourceTree = "<group>"; };
+		2551CC001EDDF79000270D12 /* EarlGrey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2551CBFF1EDDF74D00270D12 /* EarlGrey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +81,7 @@
 				2551CBD61EDDE79A00270D12 /* EarlGreyAttributedText */,
 				2551CBEB1EDDE79A00270D12 /* EarlGreyAttributedTextTests */,
 				2551CBD51EDDE79A00270D12 /* Products */,
+				2551CBF71EDDF6BE00270D12 /* EarlGrey.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,10 +110,19 @@
 		2551CBEB1EDDE79A00270D12 /* EarlGreyAttributedTextTests */ = {
 			isa = PBXGroup;
 			children = (
+				2551CC001EDDF79000270D12 /* EarlGrey.swift */,
 				2551CBEC1EDDE79A00270D12 /* EarlGreyAttributedTextTests.swift */,
 				2551CBEE1EDDE79A00270D12 /* Info.plist */,
 			);
 			path = EarlGreyAttributedTextTests;
+			sourceTree = "<group>";
+		};
+		2551CBF81EDDF6BE00270D12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2551CBFC1EDDF6BE00270D12 /* EarlGrey.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +156,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2551CBFE1EDDF72F00270D12 /* PBXTargetDependency */,
 				2551CBEA1EDDE79A00270D12 /* PBXTargetDependency */,
 			);
 			name = EarlGreyAttributedTextTests;
@@ -166,6 +196,12 @@
 			mainGroup = 2551CBCB1EDDE79A00270D12;
 			productRefGroup = 2551CBD51EDDE79A00270D12 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2551CBF81EDDF6BE00270D12 /* Products */;
+					ProjectRef = 2551CBF71EDDF6BE00270D12 /* EarlGrey.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2551CBD31EDDE79A00270D12 /* EarlGreyAttributedText */,
@@ -173,6 +209,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2551CBFC1EDDF6BE00270D12 /* EarlGrey.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EarlGrey.framework;
+			remoteRef = 2551CBFB1EDDF6BE00270D12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2551CBD21EDDE79A00270D12 /* Resources */ = {
@@ -208,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2551CC011EDDF79000270D12 /* EarlGrey.swift in Sources */,
 				2551CBED1EDDE79A00270D12 /* EarlGreyAttributedTextTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +266,11 @@
 			isa = PBXTargetDependency;
 			target = 2551CBD31EDDE79A00270D12 /* EarlGreyAttributedText */;
 			targetProxy = 2551CBE91EDDE79A00270D12 /* PBXContainerItemProxy */;
+		};
+		2551CBFE1EDDF72F00270D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EarlGrey;
+			targetProxy = 2551CBFD1EDDF72F00270D12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
