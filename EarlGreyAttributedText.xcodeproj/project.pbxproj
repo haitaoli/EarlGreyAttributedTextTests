@@ -460,6 +460,7 @@
 				2551CBF31EDDE79A00270D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2551CBF41EDDE79A00270D12 /* Build configuration list for PBXNativeTarget "EarlGreyAttributedTextTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				2551CBF61EDDE79A00270D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import EarlGrey
 @testable import EarlGreyAttributedText
 
 class EarlGreyAttributedTextTests: XCTestCase {
@@ -24,6 +25,7 @@ class EarlGreyAttributedTextTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        EarlGrey.select(elementWithMatcher: grey_accessibilityLabel("link")).assert(grey_sufficientlyVisible())
     }
     
     func testPerformanceExample() {
